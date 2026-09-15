@@ -228,8 +228,14 @@ mod tests {
 
     #[test]
     fn spanish_keeps_accented_words_but_rejects_han_and_cyrillic() {
-        assert_eq!(clean_text("niño", Language::Spanish).as_deref(), Some("niño"));
-        assert_eq!(clean_text("coche.", Language::Spanish).as_deref(), Some("coche"));
+        assert_eq!(
+            clean_text("niño", Language::Spanish).as_deref(),
+            Some("niño")
+        );
+        assert_eq!(
+            clean_text("coche.", Language::Spanish).as_deref(),
+            Some("coche")
+        );
         assert_eq!(
             clean_text("a través de", Language::Spanish).as_deref(),
             Some("a través de")
