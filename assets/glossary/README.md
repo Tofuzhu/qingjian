@@ -37,6 +37,17 @@
 - 个别错译：`椅子 -> presidente`、`工作 -> obra`、`必须 -> debe`
 - 生僻字与专名的准确率低
 - 动词走英文源（`to {英文释义} (verb)`）后约 86% 是原形，其余是别的动词形式
+- 有一部分条目的译词还是英文，没有翻成西语：
+  - 整条是英文的：「会 + 动词」这一类几乎全是（`会买 -> will buy`、`会去 -> will go`、
+    `会飞 -> can fly`），另有 `你需要 -> you need`、`下了 -> got off`、`不得 -> must not`、
+    `中耳炎 -> otitis media`。这类全小写的英文短语共 177 条
+  - 单个词没翻的：`三明治 -> sandwich`、`五金 -> hardware`
+  - 英西混排的：`也会 -> will también`、`会令 -> will hacer`、`不送 -> no Ver Off`
+  - 与 `glossary-en.tsv` 的英文释义逐字相同的条目里，绝大多数是同形词或专名
+    （`abdomen`、`vector`、`Ding Wei`），属正常
+- 7 条没有词性（源表 `glossary-en.tsv` 里就没有），如 `刷拉 -> swish`、`嗡嗡 -> buzz`、
+  `御 -> carruaje imperial`；其中 `第 -> No` 是错译（源表的英文释义是 `-th`）
+- 短语中间的词首字母有时会被无端大写：`开发区 -> zona de Desarrollo`、`一等奖 -> primer Premio`
 
 欢迎报错译：有反馈之后可以再用 LLM 在现有表上精修一轮。
 
